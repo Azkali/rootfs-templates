@@ -1,6 +1,6 @@
 Architectures: arm64
 Components: main
 Suites: bookworm
-Uris: https://droid2q.azka.li/
+Uris: http://droid2q.azka.li/
 Types: deb
 Signed-By: /var/lib/extrepo/keys/droidian-q2q.asc
