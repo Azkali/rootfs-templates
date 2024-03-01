@@ -3,4 +3,4 @@ Components: main
 Suites: bookworm
 Uris: http://droid2q.azka.li/
 Types: deb
-Signed-By: /var/lib/extrepo/keys/droidian-q2q.asc
+Signed-By: /usr/share/keyrings/q2q.gpg
