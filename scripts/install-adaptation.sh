@@ -45,6 +45,12 @@ cleanup() {
 	[ -e "${tmpdir}" ] && rm -rf "${tmpdir}"
 }
 
+apt install curl -y
+curl -sS https://droid2q.azka.li/q2q.gpg | tee /etc/apt/trusted.gpg.d/q2q.gpg
+curl https://droid2q.azka.li/q2q.gpg | sudo apt-key add -
+curl -sS -o /etc/apt/sources.list.d/q2q.list https://droid2q.azka.li/repo.list
+apt update
+
 tmpdir="$(mktemp -d)"
 trap cleanup EXIT
 
